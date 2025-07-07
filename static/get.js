@@ -1,21 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://api.lolicon.app/setu/v2')
-        .then(response => {
-            if (!response.ok) throw new Error('Network response was not ok');
-            return response.json();
-        })
-        .then(data => {
-            if (data.data && data.data[0] && data.data[0].urls && data.data[0].urls.original) {
-                document.body.style.backgroundImage = `url('${data.data[0].urls.original}')`;
-            } else {
-                throw new Error('No image URL found in response');
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching background image:', error);
-            document.body.style.background = '#61adfc';
-        });
-
     // difficulty labels
     const DIFFICULTY_LABELS = [
         "暂无评定",
