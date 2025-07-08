@@ -4,13 +4,14 @@
     --card-alpha: 0.6;
 }
 
+/* 基础样式 */
 html {
     height: 100%;
     width: 100%;
 }
 
 body {
-    background: #61adfc url("https://loliconapi.zmdayo.top") no-repeat center center fixed;
+    background: #61adfc url("https://rikka-img.zmdayo.top") no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -30,9 +31,7 @@ button {
     padding: 0;
     cursor: pointer;
     -webkit-appearance: none;
-    /* 兼容 WebKit 内核浏览器 */
     appearance: none;
-    /* 标准属性，提升兼容性 */
 }
 
 button:hover {
@@ -43,6 +42,7 @@ div p {
     opacity: 0.8;
 }
 
+/* 控制按钮区域 */
 #moonlight {
     position: absolute;
     right: 10px;
@@ -61,15 +61,6 @@ div p {
     display: flex;
     align-items: center;
     gap: 20px;
-    /* Space between icon and slider */
-}
-
-#slider {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
 }
 
 #slider svg {
@@ -80,83 +71,48 @@ div p {
 #sliderRange {
     display: none;
     width: 100px;
-    /* Adjust width as needed */
-    margin: 0;
-    border: none;
     filter: invert(0.8);
 }
 
+/* 卡片基础样式 */
+.card {
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    font-size: 1.1em;
+    width: 75%;
+    max-width: 95%;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    box-shadow: 0 8px 32px rgb(174 137 245 / 20%), 
+                inset 0 0 6px 1px rgb(185 210 216 / 10%);
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(206, 140, 210, 0.2);
+    transition: all 0.3s;
+}
+
+/* 明暗主题 */
 .light {
     background-color: rgba(var(--light-bg-rgb), var(--card-alpha));
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     color: black;
-    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .dark {
     background-color: rgba(var(--dark-bg-rgb), var(--card-alpha));
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     color: white;
-    border: 1px solid rgba(60, 60, 60, 0.8);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.card {
-    border-radius: 30px;
-    padding: 2rem 1rem;
-    margin: 1rem auto;
-    font-size: 1.1em;
-    width: 75%;
-    text-align: center;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    position: relative;
-    box-shadow: 0 8px 32px rgb(174 137 245 / 20%), inset 0 0 6px 1px rgb(185 210 216 / 10%);
-    transition: all 0.5s;
-}
-
-.card:hover {
-    transition: all 0.3s;
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(206, 140, 210, 0.2);
-}
-
-.glass {
-    height: 200px;
-}
-
-#last-updated {
-    font-size: 0.8em;
-}
-
-.card p {
-    font-size: 1.1em;
-    margin: 1rem;
-}
-
-.container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-@media (max-width: 700px) {
-    body {
-        touch-action: pan-y;
-    }
-
-    .card {
-        width: 95%;
-    }
-}
-
+/* 状态文本样式 */
 .sleeping {
     color: gray;
 }
@@ -169,109 +125,34 @@ div p {
     color: red;
 }
 
-#hitokoto {
-    border-radius: 0.5rem;
-    padding: 0.8rem 1rem;
+/* 底部信息样式 */
+#last-updated {
+    font-size: 0.8em;
 }
 
-#hitokoto_text {
-    color: rgba(180, 40, 200, 0.9);
+.card p {
+    font-size: 1.1em;
+    margin: 1rem;
 }
 
-.dark a,
-.dark .awake {
-    color: rgb(100, 255, 100);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
-
-.light a,
-.light .awake {
-    color: rgb(0, 100, 0);
-}
-
-.theme-controls {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px;
-    z-index: 1000;
-}
-
-.opacity-controls {
+/* 主容器 */
+.container {
+    flex: 1;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.opacity-controls button {
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.opacity-controls button:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-.dark a.sleeping,
-.light a.sleeping {
-    color: gray !important;
-}
-
-.dark a.error,
-.light a.error {
-    color: red !important;
-}
-
-/* Steam Card */
-.steam_card {
-    text-align: center;
-}
-
-/* 控制栏按钮 */
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
-    transition: 0.3s;
-    color: var(--text-color);
-    -webkit-appearance: none;
-    /* 兼容 WebKit 内核浏览器 */
-    appearance: none;
-    /* 标准属性，提升兼容性 */
-}
-
-button:hover {
-    background: var(--control-bg);
-}
-
-/* 进度条滑块 */
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    /* 兼容 WebKit 内核浏览器 */
-    appearance: none;
-    /* 标准属性，提升兼容性 */
-    width: 12px;
-    height: 12px;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
-/* AC Number Card Styles */
+/* AC数据容器 */
 .ac-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .ac-item {
@@ -279,6 +160,8 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
+    min-width: 120px;
+    flex: 1;
 }
 
 .ac-item h3 {
@@ -291,33 +174,21 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
-    opacity: 1;
 }
 
-/* For mobile responsiveness */
-@media (max-width: 500px) {
-    .ac-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .ac-item {
-        padding: 0.5rem 0;
-    }
-}
-
-/* Right-Aligned Text Bar Chart */
+/* 图表样式 */
 .chart-container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     width: 100%;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .chart {
     flex: 1;
-    min-width: 0;
+    min-width: 300px;
     padding: 0 15px;
 }
 
@@ -326,7 +197,6 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     height: auto;
     gap: 14px;
-    /* Slightly more gap for readability */
     padding: 20px 0;
 }
 
@@ -334,16 +204,13 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     align-items: center;
     height: 30px;
-    /* Slightly taller bars */
     background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     border-radius: 0 15px 15px 0;
     position: relative;
     transition: all 0.3s ease;
     margin-left: 100px;
-    /* More space for Chinese text */
     width: calc(100% - 105px);
     max-width: 80%;
-    /* Conservative maximum */
 }
 
 .bar:hover {
@@ -363,67 +230,25 @@ input[type="range"]::-webkit-slider-thumb {
 .bar-label {
     position: absolute;
     left: -95px;
-    /* Adjusted for right alignment */
     width: 90px;
     text-align: right;
-    /* Right-aligned Chinese text */
     font-size: 0.8em;
     white-space: normal;
-    /* Changed from nowrap to allow wrapping */
     overflow: visible;
     font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
     padding-right: 5px;
     line-height: 1.2;
-    /* Better for wrapped text */
     word-break: keep-all;
-    /* Prevent breaking Chinese characters */
 }
 
-/* Dark theme */
-.dark .bar {
-    background: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
-}
-
-.dark .bar-value {
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 700px) {
-    .chart-container {
-        flex-direction: column;
-        gap: 28px;
-    }
-
-    .bar {
-        margin-left: 85px;
-        width: calc(100% - 90px);
-        height: 28px;
-    }
-
-    .bar-label {
-        left: -82px;
-        width: 80px;
-        font-size: 0.75em;
-        white-space: normal;
-        /* Ensure wrapping on mobile */
-        line-height: 1.1;
-    }
-
-    .chart {
-        padding: 0 12px;
-    }
-}
-
-/* Last Record Card Styles */
+/* 最新记录样式 */
 .last-record-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
     padding: 1rem;
+    justify-content: center;
 }
 
 .last-record-item {
@@ -434,6 +259,9 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 0.8rem;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
+    flex: 1;
+    min-width: 45%;
+    box-sizing: border-box;
 }
 
 .last-record-item h4 {
@@ -446,6 +274,37 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+/* 主题特定样式 */
+.dark a,
+.dark .awake {
+    color: rgb(100, 255, 100);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.light a,
+.light .awake {
+    color: rgb(0, 100, 0);
+}
+
+.dark a.sleeping,
+.light a.sleeping {
+    color: gray !important;
+}
+
+.dark a.error,
+.light a.error {
+    color: red !important;
+}
+
+.dark .bar {
+    background: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.dark .bar-value {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .dark .last-record-item {

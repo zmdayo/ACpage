@@ -34,8 +34,8 @@
                 </button>
                 <input type="range" id="sliderRange" min="0" max="1" value="0.5" step="0.01">
             </div>
-            <h1><ruby>AC<rt>wā</rt></ruby>了吗</h1>
-            <p id="last-updated">最后更新: 1145-14-19 19:81:00</p>
+            <h1><ruby>AC<rt>wā</rt></ruby>了吗？</h1>
+            <p id="last-updated">最后更新: <span class="awake" id="last-updated-number">1145-14-19 19:81:00</span></p>
         </div>
 
 
@@ -43,11 +43,11 @@
             <div class="ac-container">
                 <div class="ac-item">
                     <h3>Total AC</h3>
-                    <p id="total_ac">0</p>
+                    <p class="awake" id="total_ac">0</p>
                 </div>
                 <div class="ac-item">
                     <h3>Today AC</h3>
-                    <p id="today_ac">0</p>
+                    <p class="awake" id="today_ac">0</p>
                 </div>
             </div>
         </div>
@@ -66,7 +66,27 @@
             </div>
         </div>
 
-        <div class="card light" id="last_record"></div>
+        <div class="card light" id="last_record">
+            <h2>最新提交：<a id="last_record_title" href="#" target="_blank">加载中...</a></h2>
+            <div class="last-record-container" id="last_record_container">
+                <div class="last-record-item">
+                    <h4>难度</h4>
+                    <p class="awake" id="last_record_difficulty">-</p>
+                </div>
+                <div class="last-record-item">
+                    <h4>代码长度</h4>
+                    <p class="awake" id="last_record_length">-</p>
+                </div>
+                <div class="last-record-item">
+                    <h4>运行时间</h4>
+                    <p class="awake" id="last_record_time">-</p>
+                </div>
+                <div class="last-record-item">
+                    <h4>内存占用</h4>
+                    <p class="awake" id="last_record_memory">-</p>
+                </div>
+</div></div>
+
         <div class="card light" id="more_text">
 
             <!-- (hitokoto) 一言 -->
