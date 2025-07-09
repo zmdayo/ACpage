@@ -262,12 +262,6 @@ div p {
     gap: 1rem;
     width: 100%;
     padding: 1rem;
-    justify-content: center;
-    /* 整个网格水平居中 */
-    justify-items: center;
-    /* 网格项内容居中 */
-    margin: 0 auto;
-    /* 水平居中 */
 }
 
 .last-record-item {
@@ -296,7 +290,7 @@ div p {
     font-weight: bold;
 }
 
-#hitokoto_source {
+.note-text {
     display: block;
     font-size: 0.8em;
     color: #666;
