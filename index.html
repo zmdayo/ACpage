@@ -85,14 +85,15 @@
                     <h4>内存占用</h4>
                     <p class="awake" id="last_record_memory">-</p>
                 </div>
-</div></div>
+            </div>
+        </div>
 
         <div class="card light" id="more_text">
-
             <!-- (hitokoto) 一言 -->
             <div>
                 <p id="hitokoto">
                     <a href="#" id="hitokoto_text">一言获取中~</a>
+                    <span id="hitokoto_source"></span>
                 </p>
             </div>
             <p>页面基本copy <a href="https://sleepy.wyf9.top" target="_blank">wyf9</a> 和<a href="https://chat.deepseek.com" target="_blank">至高无上天下无敌的DeepSeek R1大人</a>，我相信bug不多</p>
@@ -100,6 +101,9 @@
     </div>
 
     <script src="/static/get.js" defer></script>
+    <script>
+        if (window.innerWidth < 380) alert("请注意，本网页在您的设备上可能显示错误。");
+    </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
 // @version    1.0
 // @description    自动将洛谷AC记录推送到GitHub仓库
 // @author    DeepSeek R1 & zmdayo
-// @icon64URL    https://ACpage.zmdayo.top/static/favicon.ico
+// @iconURL    https://acpage.zmdayo.top/static/favicon.ico
 // @match    https://www.luogu.com.cn/record/*
 // @match    https://www.luogu.com.cn/
 // @resource toastifyCSS https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css
