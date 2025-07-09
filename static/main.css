@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: #61adfc url("https://rikka-img.zmdayo.top") no-repeat center center fixed;
+    background: #61adfc no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     display: flex;

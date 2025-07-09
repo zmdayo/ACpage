@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //设置背景
+    document.body.style.backgroundImage = `url(https://rikka-img.zmdayo.top?timestamp=${Date.now()})`
     // 常量定义
     const DIFFICULTY_LABELS = [
         "暂无评定", "入门", "普及−", "普及/提高−",
