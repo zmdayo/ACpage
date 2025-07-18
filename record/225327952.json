@@ -1,0 +1,18 @@
+{
+  "id": 225327952,
+  "contest": {
+    "id": 256033,
+    "name": "【LGR-233-Div.4】洛谷入门赛 #37",
+    "startTime": 1752836400,
+    "endTime": 1752843600
+  },
+  "submitTime": 1752837603,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 0,
+  "pid": "T634814",
+  "title": "[语言月赛 202507] 卡牌游戏",
+  "time": 8,
+  "memory": 616,
+  "sourceCodeLength": 546
+}
