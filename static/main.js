@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
         fixed: true,
         autoplay: true,
         audio: [{
-            name: 'world.execute(me); [Real Instrumental]',
-            artist: "Mili // Churitoring's Video Warehouse",
-            url: '/static/world_execute_me.ogg',
-            cover: '/static/world_execute_me_cover.jpg'
+            name: 'world.execute (me) ; (Key Ingredient ver.) (Instrumental)',
+            artist: "Mili",
+            url: '/static/wem.opus',
+            cover: '/static/wem.webp'
         }]
     });
 });
