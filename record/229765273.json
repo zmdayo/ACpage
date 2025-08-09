@@ -1,0 +1,13 @@
+{
+  "id": 229765273,
+  "contest": null,
+  "submitTime": 1754706206,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 4,
+  "pid": "P1439",
+  "title": "【模板】最长公共子序列",
+  "time": 185,
+  "memory": 2292,
+  "sourceCodeLength": 546
+}
