@@ -1,0 +1,13 @@
+{
+  "id": 229767471,
+  "contest": null,
+  "submitTime": 1754706697,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 2,
+  "pid": "B3637",
+  "title": "最长上升子序列",
+  "time": 25,
+  "memory": 792,
+  "sourceCodeLength": 370
+}
