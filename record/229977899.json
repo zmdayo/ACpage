@@ -1,0 +1,18 @@
+{
+  "id": 229977899,
+  "contest": {
+    "id": 261747,
+    "name": "【LGR-(-26)】SCP 2025 第一轮（初赛 J 组）模拟",
+    "startTime": 1754789400,
+    "endTime": 1754796600
+  },
+  "submitTime": 1754795789,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 0,
+  "pid": "T649420",
+  "title": " J 组-完善程序-2025",
+  "time": 4,
+  "memory": 788,
+  "sourceCodeLength": 97
+}
