@@ -1,0 +1,18 @@
+{
+  "id": 230050246,
+  "contest": {
+    "id": 265699,
+    "name": "【MX-J19】梦熊 J 组 · 异或赛 & DLESS Round 3（同步赛）",
+    "startTime": 1754805600,
+    "endTime": 1754818200
+  },
+  "submitTime": 1754815302,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 0,
+  "pid": "T623329",
+  "title": "【MX-X16-T1】「DLESS-3」XOR and Greater Sum",
+  "time": 2931,
+  "memory": 1064,
+  "sourceCodeLength": 376
+}
