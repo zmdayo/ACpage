@@ -1,28 +1,28 @@
 {
-  "timestamp": 1754839388,
-  "total": 47,
-  "today": 7,
+  "timestamp": 1754895619,
+  "total": 48,
+  "today": 1,
   "difficulty": {
     "total": [
       8,
       2,
       8,
-      10,
+      11,
       16,
       3,
       0,
       0
     ],
     "today": [
-      2,
       0,
       0,
       0,
-      4,
       1,
+      0,
+      0,
       0,
       0
     ]
   },
-  "last_id": 230116669
+  "last_id": 230209105
 }
