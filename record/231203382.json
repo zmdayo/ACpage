@@ -1,0 +1,13 @@
+{
+  "id": 231203382,
+  "contest": null,
+  "submitTime": 1755261966,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 3,
+  "pid": "B3716",
+  "title": "分解质因子 3",
+  "time": 10359,
+  "memory": 426832,
+  "sourceCodeLength": 586
+}
