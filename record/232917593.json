@@ -1,0 +1,18 @@
+{
+  "id": 232917593,
+  "contest": {
+    "id": 270370,
+    "name": "【MX-J21】梦熊 J 组 · 企鹅赛 & FAOI-R6（同步赛）",
+    "startTime": 1756015200,
+    "endTime": 1756027800
+  },
+  "submitTime": 1756018324,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 0,
+  "pid": "T623351",
+  "title": "【MX-X18-T1】「FAOI-R6」520",
+  "time": 80,
+  "memory": 1112,
+  "sourceCodeLength": 358
+}
