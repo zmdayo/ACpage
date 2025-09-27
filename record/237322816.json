@@ -1,0 +1,13 @@
+{
+  "id": 237322816,
+  "contest": null,
+  "submitTime": 1758980202,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 3,
+  "pid": "P10480",
+  "title": "可达性统计",
+  "time": 136,
+  "memory": 112632,
+  "sourceCodeLength": 627
+}
