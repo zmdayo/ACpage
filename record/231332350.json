@@ -1,0 +1,18 @@
+{
+  "id": 231332350,
+  "contest": {
+    "id": 265532,
+    "name": "『MGVOI』Round 1 加强赛",
+    "startTime": 1755324000,
+    "endTime": 1755338400
+  },
+  "submitTime": 1755332455,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 3,
+  "pid": "P13730",
+  "title": "【MGVOI R1-B】完美重排（sort）",
+  "time": 449,
+  "memory": 1064,
+  "sourceCodeLength": 516
+}
