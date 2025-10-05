@@ -1,0 +1,18 @@
+{
+  "id": 231304283,
+  "contest": {
+    "id": 265532,
+    "name": "『MGVOI』Round 1 加强赛",
+    "startTime": 1755324000,
+    "endTime": 1755338400
+  },
+  "submitTime": 1755327016,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 2,
+  "pid": "P13729",
+  "title": "【MGVOI R1-A】超级奇数（odd）",
+  "time": 93,
+  "memory": 852,
+  "sourceCodeLength": 959
+}
