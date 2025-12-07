@@ -1,0 +1,18 @@
+{
+  "id": 251988238,
+  "contest": {
+    "id": 254710,
+    "name": "【LGR-253-Div.3】洛谷基础赛 #28 & KenOI Round 1",
+    "startTime": 1765087200,
+    "endTime": 1765099800
+  },
+  "submitTime": 1765092240,
+  "status": 12,
+  "uid": 816057,
+  "difficulty": 0,
+  "pid": "T625017",
+  "title": "[KenOI 2025] 异或题",
+  "time": 909,
+  "memory": 3992,
+  "sourceCodeLength": 815
+}
