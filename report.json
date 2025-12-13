@@ -1,22 +1,22 @@
 {
-  "timestamp": 1765092251,
-  "total": 76,
-  "today": 3,
+  "timestamp": 1765618015,
+  "total": 77,
+  "today": 0,
   "difficulty": {
     "total": [
       14,
       4,
       17,
-      17,
+      18,
       21,
       3,
       0,
       0
     ],
     "today": [
-      2,
       0,
-      1,
+      0,
+      0,
       0,
       0,
       0,
